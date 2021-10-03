@@ -33,10 +33,48 @@ body {
 }
 
 h1 {
-    font-size: 8rem;
-    color: white;
+    font-size: 14rem;
+    color: rgb(255, 255, 255);
+    opacity: 80%;
 }
 
 section {
     height: 100vh;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                     DOC                                    */
+/* -------------------------------------------------------------------------- */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32, 0.5);
+    z-index: 50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    color: white;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: rgb(23, 189, 255)
 }

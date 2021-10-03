@@ -43,29 +43,26 @@ pointLight.position.z = 4
 scene.add(pointLight)
 
 /* --------------------------------- Light2 --------------------------------- */
-const pointLight2 = new THREE.PointLight(0x1cffd9, 2)
+const pointLight2 = new THREE.PointLight(0x0025de, 2)
 // x, y ,z
-pointLight2.position.set(1.8, -2.51, -0.93)
-pointLight2.intensity = 2.6
+pointLight2.position.set(1.38, -1.47, -0.32)
+pointLight2.intensity = 6.84
 
 scene.add(pointLight2)
 
 // Rajoute un debuguer pour controller pointlight2.position
 // const light2 = gui.addFolder('Light2')
-
 // light2.add(pointLight2.position, 'x').min(-3).max(3).step(0.01)
 // light2.add(pointLight2.position, 'y').min(-6).max(6).step(0.01)
 // light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.01)
 // light2.add(pointLight2, 'intensity').min(0).max(10).step(0.01)
 // const light2Color = {
-//     color: 0x1cffd9
+//     color: 0x0025de
 // }
 // light2.addColor(light2Color, 'color')
 //     .onChange(() => {
 //         pointLight2.color.set(light2Color.color)
 //     })
-
-
 // const pointLightHelper = new THREE.PointLightHelper(pointLight2, 2);
 // scene.add(pointLightHelper)
 
@@ -73,10 +70,10 @@ scene.add(pointLight2)
 
 
 /* --------------------------------- Light3 --------------------------------- */
-const pointLight3 = new THREE.PointLight(0xff17dc, 2)
+const pointLight3 = new THREE.PointLight(0x0dffd3, 2)
 // x, y ,z
-pointLight3.position.set(-2.23, 1.26, -0.61)
-pointLight3.intensity = 6
+pointLight3.position.set(-1.46, 1.83, -0.14)
+pointLight3.intensity = 4
 scene.add(pointLight3)
 
 // Rajoute un debuguer pour controller pointlight2.position
@@ -86,14 +83,12 @@ scene.add(pointLight3)
 // light3.add(pointLight3.position, 'z').min(-3).max(3).step(0.01)
 // light3.add(pointLight3, 'intensity').min(0).max(10).step(0.01)
 // const light3Color = {
-//     color: 0xff17dc
+//     color: 0x0dffd3
 // }
 // light3.addColor(light3Color, 'color')
 //     .onChange(() => {
 //         pointLight3.color.set(light3Color.color)
 //     })
-
-
 // const pointLightHelper2 = new THREE.PointLightHelper(pointLight3, 2);
 // scene.add(pointLightHelper2)
 
@@ -201,3 +196,24 @@ const tick = () => {
 }
 
 tick()
+
+
+
+
+// LOAD OBJ 
+// /* Create global variable we will need for later */
+// let elephant = null;
+// let sampler = null;
+// /* Load the .obj file */
+// new THREE.OBJLoader().load(
+//   "path/to/the/model.obj",
+//   (obj) => {
+//     /* The loaded object with my file being a group, I need to pick its first child */
+//     elephant = obj.children[0];
+//     /* Update the material of the object */
+//     elephant.material = new THREE.MeshBasicMaterial({
+//       wireframe: true,
+//       color: 0x000000,
+//       transparent: true,
+//       opacity: 0.05
+//     });
